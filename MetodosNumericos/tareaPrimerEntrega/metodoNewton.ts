@@ -2,7 +2,7 @@ function df(f: (x: number) => number, x: number, h: number = 1e-7): number {
   return (f(x + h) - f(x - h)) / (2 * h);
 }
 
-function metodoNewton(
+export function metodoNewton(
   f: (x: number) => number,
   x0: number,
   epsilon: number,

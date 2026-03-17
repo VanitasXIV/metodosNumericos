@@ -1,0 +1,7 @@
+{
+  "name": "metodosnumericos",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node tareaPrimerEntrega/funcionTest.ts"
+  }
+}
