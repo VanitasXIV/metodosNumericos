@@ -8,7 +8,7 @@ const f = (x: number) : number =>
 const epsilon = 1e-8;
 
 const raizNewton = metodoNewton(f, 1.5, epsilon, 100);
-const raizTriseccion = triseccion(f, 1, 2, epsilon);
+const raizTriseccion = triseccion(f, 0.5, 1.2, epsilon);
 
 console.log(`Raiz aproximada por Newton: ${raizNewton}`);
 console.log(`Raiz aproximada por triseccion: ${raizTriseccion}`)

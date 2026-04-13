@@ -8,6 +8,10 @@ export function triseccion(
   b: number,
   epsilon: number,
 ): number {
+  if (sgn(f(a)) * sgn(f(b)) >= 0) {
+    throw new Error("No se cumple la condición de Bolzano: f(a) y f(b) deben tener signos opuestos");
+  }
+
   while (b - a >= epsilon) {
     const c1 = a + (b - a) / 3;
     const c2 = a + (2 * (b - a)) / 3;
